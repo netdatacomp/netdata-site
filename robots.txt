@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://netdatacomp.github.io/netdata-site/sitemap.xml
