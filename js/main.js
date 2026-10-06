@@ -1,31 +1,40 @@
-// NetData - Scripts básicos
-
-document.addEventListener('DOMContentLoaded', function () {
-  // Menu mobile
+/* NetData Computadores — V2 */
+document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('menuToggle');
   const nav = document.getElementById('mainNav');
-
   if (toggle && nav) {
-    toggle.addEventListener('click', function () {
-      nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
     });
-
-    // Fecha o menu ao clicar em um link
-    nav.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        nav.classList.remove('open');
-      });
-    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Abrir menu');
+    }));
   }
 
-  // Formulário de contato (feedback básico)
+  // Formulário: abre uma conversa no WhatsApp com os dados preenchidos.
   const form = document.getElementById('contactForm');
   if (form) {
-    form.addEventListener('submit', function (e) {
-      // Remova o preventDefault quando o backend estiver pronto
-      // e configure o action do formulário
+    form.addEventListener('submit', e => {
       e.preventDefault();
-      alert('Obrigado! Sua mensagem foi registrada.\n\nO programador precisa configurar o envio real do formulário (PHP, e-mail, etc.).');
+      const data = new FormData(form);
+      const message = [
+        'Olá! Gostaria de atendimento da NetData Computadores.',
+        '',
+        'Nome: ' + (data.get('nome') || ''),
+        'E-mail: ' + (data.get('email') || ''),
+        'Telefone: ' + (data.get('telefone') || ''),
+        'Assunto: ' + (data.get('assunto') || ''),
+        'Mensagem: ' + (data.get('mensagem') || '')
+      ].join('\\n');
+      window.open('https://wa.me/554836222726?text=' + encodeURIComponent(message), '_blank', 'noopener');
     });
   }
+
+  // Atualiza automaticamente o ano do rodapé quando houver um elemento dedicado.
+  document.querySelectorAll('[data-current-year]').forEach(el => el.textContent = new Date().getFullYear());
 });
