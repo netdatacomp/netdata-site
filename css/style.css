@@ -36,3 +36,7 @@
 .page-hero .hero-content{text-align:left;max-width:1120px}
 @media(max-width:900px){.visual-strip{grid-template-columns:1fr}.visual-strip-image{min-height:260px}.hero-home .hero-inner{min-height:420px}}
 @media(max-width:700px){.hero-overlay{background:linear-gradient(90deg,rgba(5,12,25,.94),rgba(5,12,25,.72))}.hero-home .hero-content,.page-hero .hero-content{text-align:center}.hero-home .hero-inner{min-height:470px}.image-card,.image-card img,.image-card-tall img{min-height:300px}.support-visual{height:190px}.contact-photo{height:190px}}
+
+/* Logo oficial NetData - ajuste de exibição no cabeçalho */
+.header .logo{display:flex;align-items:center;min-width:150px;height:76px;overflow:visible}.header .logo img{display:block!important;width:auto!important;height:52px!important;max-width:150px;object-fit:contain;opacity:1;visibility:visible}.header .header-inner{gap:24px}
+@media(max-width:760px){.header .logo{min-width:0;height:64px}.header .logo img{height:46px!important;max-width:140px}}
