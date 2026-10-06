@@ -1,0 +1,1 @@
+export default function SectionIcon({ children }) { return <div className="service-icon">{children}</div> }
