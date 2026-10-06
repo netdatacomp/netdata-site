@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import logo from '../../images/logo.png'
 
 const links = [
   ['/', 'Home'],
@@ -12,7 +13,7 @@ export default function Header() {
     <header className="header shadow-sm">
       <div className="container header-inner">
         <NavLink to="/" className="brand-logo" aria-label="NetData Computadores">
-          <img src="/netdata-site/images/logo.png?v=5" alt="NetData Computadores" width="150" height="52" />
+          <img src={logo} alt="NetData Computadores" width="210" height="60" />
         </NavLink>
         <button className="menu-toggle" aria-label="Abrir menu" id="menuToggle" onClick={() => {
           document.getElementById('mainNav')?.classList.toggle('open')
