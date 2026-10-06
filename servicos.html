@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="author" content="NetData Computadores">
+  <meta name="format-detection" content="telephone=yes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta name="description" content="Serviços de assistência técnica: manutenção, troca de peças, instalação de rede, periféricos, segurança e backup. NetData Computadores - Tubarão/SC.">
   <title>Nossos Serviços | NetData Computadores</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="canonical" href="https://netdatacomp.github.io/netdata-site/servicos.html">
+  <script>tailwind.config={theme:{extend:{colors:{netdata:{50:'#eef6fc',500:'#0066b3',700:'#004d8c'},ink:'#0b1220'}}}}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-white text-slate-900 antialiased">
 
-  <header class="header">
+  <header class="header shadow-sm">
     <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <strong>NetData</strong>
-        <span>Computadores</span>
-      </a>
+      <a href="index.html" class="logo" aria-label="NetData Computadores"><img src="images/logo.png" alt="NetData Computadores" width="100" height="54"></a>
       <button class="menu-toggle" aria-label="Abrir menu" id="menuToggle">
         <span></span><span></span><span></span>
       </button>
@@ -33,7 +38,7 @@
 
   <section class="hero" style="padding:80px 0 60px;">
     <div class="container hero-content">
-      <h1>Nossos Serviços</h1>
+      <h1 class="tracking-tight">Nossos Serviços</h1>
       <p>Soluções completas para computadores, notebooks e redes em Tubarão e região.</p>
     </div>
   </section>
@@ -88,7 +93,7 @@
     </div>
   </section>
 
-  <section class="cta-banner">
+  <section class="cta-banner" aria-label="Chamada para atendimento">
     <div class="container">
       <h2>Marque um horário de atendimento</h2>
       <p>Atendimento em domicílio ou remoto. Você escolhe o melhor dia e horário.</p>
