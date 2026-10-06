@@ -1,57 +1,22 @@
-# NetData Computadores — Site Novo (HTML)
+# NetData Computadores — Site V2
 
-Site institucional moderno em HTML + CSS + JS puro, pronto para subir no servidor de vocês.
+Site institucional da NetData Computadores, preparado para GitHub Pages.
 
-## Estrutura de arquivos
+## V2
+- Interface responsiva e mobile-first.
+- Tailwind CSS via CDN para utilitários e evolução rápida da interface.
+- CSS próprio consolidado para identidade visual e componentes existentes.
+- SEO técnico básico: canonical, robots, sitemap, meta description e Open Graph.
+- Navegação mobile com estado acessível.
+- Formulário de contato integrado ao WhatsApp, sem depender de backend.
+- CTAs para WhatsApp, telefone e orçamento.
+- Logo oficial reutilizado nas páginas.
 
-```
-netdata-site/
-├── index.html          → Página inicial
-├── servicos.html       → Serviços
-├── suporte.html        → Suporte remoto
-├── contato.html        → Contato + formulário
-├── css/
-│   └── style.css       → Estilos
-├── js/
-│   └── main.js         → Menu mobile + formulário
-└── README.md
-```
+## Publicação
+O site pode ser publicado diretamente pelo GitHub Pages usando a branch `main` e a pasta raiz.
 
-## O que o programador precisa fazer
+URL esperada: https://netdatacomp.github.io/netdata-site/
 
-1. **Subir os arquivos** no servidor (raiz do domínio ou pasta pública).
-2. **Colocar o logo real**  
-   Substituir o texto "NetData" pelo `<img>` do logo oficial em todas as páginas.
-3. **Configurar o formulário de contato**  
-   No arquivo `contato.html`, o formulário está com `action="#"`.  
-   Configure para enviar por e-mail (PHP, Node, etc.) ou integração que vocês usarem.
-4. **HTTPS**  
-   Ativar certificado SSL no servidor (Let's Encrypt é gratuito).
-5. **Imagens**  
-   As seções que têm placeholders (💻 🏢) podem receber fotos reais do atendimento ou da loja.
-
-## Melhorias já incluídas
-
-- Design moderno e responsivo (mobile-first)
-- Botão flutuante de WhatsApp
-- Botão WhatsApp no menu
-- Meta description e título otimizados para SEO
-- H1 correto em todas as páginas
-- Links `tel:` e `mailto:` clicáveis
-- Menu hamburger no celular
-- CTAs claros para gerar orçamento
-
-## Número de WhatsApp usado
-
-Todos os links apontam para: **(48) 3622-2726**  
-(`https://wa.me/554836222726`)
-
-Se o número mudar, basta buscar e substituir em todos os arquivos.
-
-## Testar localmente
-
-Abra o arquivo `index.html` no navegador ou use um servidor local simples:
-
-```bash
-npx serve .
-```
+## Contato
+WhatsApp/telefone: (48) 3622-2726
+E-mail: suporte@netdatacomputadores.com.br
