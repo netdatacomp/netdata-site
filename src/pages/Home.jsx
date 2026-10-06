@@ -1,3 +1,4 @@
+import PageMeta from '../components/PageMeta'
 import { Link } from 'react-router-dom'
 
 const services = [
@@ -10,7 +11,7 @@ const services = [
 ]
 
 export default function Home() {
-  return <>
+  return <><PageMeta title="NetData Computadores | Assistência Técnica em Tubarão/SC" description="Assistência técnica de computadores em Tubarão/SC desde 1996. Atendimento em domicílio, suporte remoto e manutenção." />
     <section className="hero hero-home">
       <div className="hero-image" aria-hidden="true"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85" alt="" /></div>
       <div className="hero-overlay" aria-hidden="true" />
