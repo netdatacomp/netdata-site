@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logo from '../../images/logo.png'
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand logo-footer">
             <Link to="/" className="brand-logo" aria-label="NetData Computadores">
-              <img src="/netdata-site/images/logo.png?v=5" alt="NetData Computadores" width="150" height="52" />
+              <img src={logo} alt="NetData Computadores" width="210" height="60" />
             </Link>
             <p>Assistência técnica de computadores em Tubarão/SC desde 1996. Atendimento em domicílio e suporte remoto.</p>
           </div>
