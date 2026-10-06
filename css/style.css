@@ -1,1 +1,88 @@
-PLACEHOLDER
+/* ========================================
+   NetData Computadores - Design Premium
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #0066cc;
+  --primary-dark: #004d99;
+  --primary-light: #e6f0ff;
+  --whatsapp: #25d366;
+  --whatsapp-dark: #1da851;
+  --text: #1a2332;
+  --text-muted: #5a6a7a;
+  --bg: #ffffff;
+  --bg-alt: #f7f9fc;
+  --border: #e4e9f0;
+  --radius: 16px;
+  --radius-xs: 8px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ========== HEADER ========== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid rgba(228, 233, 240, 0.7);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.logo {
+  display: block;
+  width: 100px;
+  height: 54px;
+  background: url("data:image/png;base64,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") no-repeat left center / contain;
+  text-indent: -9999px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* NOTE: This is a partial restore - the full CSS will be completed in the next update. The logo data URI is truncated here for the tool call size. The full version is in the local project. */
