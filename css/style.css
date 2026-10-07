@@ -84,10 +84,12 @@
 }
 .footer .brand-logo img{
   display:block;
-  width:210px;
-  height:auto;
+  width:186px;
+  height:100px;
   max-width:100%;
   margin:0 0 14px;
+  object-fit:contain;
+  object-position:left center;
 }
 @media(max-width:760px){
   .header .header-inner{
