@@ -40,7 +40,7 @@ export default function Home() {
         <div className="benefit-item"><div className="benefit-icon">03</div><p><strong>Confiança</strong>Soluções práticas, claras e com suporte.</p></div>
       </div></section>
       <section className="section solutions-section"><div className="container">
-        <div className="section-header section-header-left"><span className="section-label">Nossas soluções</span><h2>Tecnologia pensada para o seu dia a dia.</h2><p>Do computador à infraestrutura de rede, reunimos as soluções essenciais para manter sua tecnologia funcionando.</p></div>
+        <div className="section-header section-header-left"><span className="section-label">Nossas soluções</span><h2 className="nowrap-title">Tecnologia pensada para o seu dia a dia.</h2><p>Do computador à infraestrutura de rede, reunimos as soluções essenciais para manter sua tecnologia funcionando.</p></div>
         <div className="services-grid modern-services">{services.map(([number,title,text]) => <article className="service-card modern-card" key={title}><div className="card-top"><span className="service-number">{number}</span><span className="card-arrow">↗</span></div><h3>{title}</h3><p>{text}</p><Link to="/servicos">Saiba mais <span>→</span></Link></article>)}</div>
       </div></section>
       <section className="impact-section"><div className="container impact-inner">
