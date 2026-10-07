@@ -193,3 +193,42 @@
 /* Título de soluções em uma única linha */
 .nowrap-title{white-space:nowrap}
 @media(max-width:900px){.nowrap-title{white-space:normal}}
+
+/* V3.2 — tipografia premium do hero */
+.hero-modern .hero-title{
+  font-family:'Manrope','Plus Jakarta Sans',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:clamp(2.45rem,5vw,4.15rem);
+  font-weight:700;
+  line-height:1.02;
+  letter-spacing:-.055em;
+  margin:0 0 24px;
+}
+.hero-modern .hero-title-main,
+.hero-modern .hero-title-accent{
+  display:block;
+}
+.hero-modern .hero-title-main{
+  color:#fff;
+  font-weight:750;
+}
+.hero-modern .hero-title-accent{
+  margin-top:7px;
+  font-size:.86em;
+  font-weight:550;
+  letter-spacing:-.04em;
+  background:linear-gradient(100deg,#7dd3fc 0%,#38bdf8 55%,#bae6fd 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+@media(max-width:700px){
+  .hero-modern .hero-title{
+    font-size:2.35rem;
+    line-height:1.05;
+    letter-spacing:-.045em;
+  }
+  .hero-modern .hero-title-accent{
+    margin-top:8px;
+    font-size:.88em;
+  }
+}
