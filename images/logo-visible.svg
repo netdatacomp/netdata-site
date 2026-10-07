@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-labelledby="title desc">
+<title id="title">NetData Computadores</title>
+<desc id="desc">Logo NetData Computadores</desc>
+<rect width="520" height="120" fill="none"/>
+<g transform="translate(8 10)">
+  <rect x="0" y="0" width="100" height="100" rx="22" fill="#0066b3"/>
+  <path d="M25 68V32h12l26 22V32h12v36H63L37 46v22H25Z" fill="#fff"/>
+  <circle cx="82" cy="20" r="8" fill="#38bdf8"/>
+</g>
+<text x="128" y="58" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="800" fill="#0b1220">NetData</text>
+<text x="130" y="92" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="600" fill="#0066b3" letter-spacing="1">COMPUTADORES</text>
+</svg>
