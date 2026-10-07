@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand logo-footer">
             <Link to="/" className="brand-logo" aria-label="NetData Computadores">
-              <img src={logo} alt="NetData Computadores" width="210" height="60" />
+              <img src={logo} alt="NetData Computadores" width="186" height="100" />
             </Link>
             <p>Assistência técnica de computadores em Tubarão/SC desde 1996. Atendimento em domicílio e suporte remoto.</p>
           </div>
