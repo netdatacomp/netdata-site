@@ -23,7 +23,7 @@ export default function Home() {
         <div className="container hero-modern-inner">
           <div className="hero-content">
             <span className="hero-badge"><span className="hero-badge-dot" /> Tecnologia e suporte desde 1996</span>
-            <h1>Tecnologia que conecta.<br /><span>Segurança que protege.</span></h1>
+            <h1 className="hero-title"><span className="hero-title-main">Tecnologia que conecta.</span><span className="hero-title-accent">Segurança que protege.</span></h1>
             <p>Infraestrutura, manutenção, redes e suporte técnico para sua empresa e sua casa operarem melhor.</p>
             <div className="hero-buttons"><Link to="/servicos" className="btn btn-blue">Conheça nossas soluções <span>→</span></Link><Link to="/contato" className="btn btn-outline">Fale conosco</Link></div>
             <div className="hero-trust"><span>✓ Atendimento especializado</span><span>✓ Orçamento sem compromisso</span></div>
