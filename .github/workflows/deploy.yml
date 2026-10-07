@@ -30,6 +30,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Prepare public assets
+        run: |
+          mkdir -p public/images
+          cp images/logo.png public/images/logo.png
+          cp images/logo-visible.svg public/images/logo-visible.svg
+
       - name: Build
         run: npm run build
 
