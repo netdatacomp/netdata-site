@@ -11,7 +11,7 @@ export default function Header() {
     <header className="header shadow-sm">
       <div className="container header-inner">
         <NavLink to="/" className="brand-logo" aria-label="NetData Computadores">
-          <img src={`${import.meta.env.BASE_URL}images/logo-visible.svg?v=1`} alt="NetData Computadores" width="260" height="60" />
+          <img src={`${import.meta.env.BASE_URL}images/logo.png?v=f2b580d`} alt="NetData Computadores" width="260" height="60" />
         </NavLink>
         <button className="menu-toggle" aria-label="Abrir menu" id="menuToggle" onClick={() => {
           document.getElementById('mainNav')?.classList.toggle('open')
