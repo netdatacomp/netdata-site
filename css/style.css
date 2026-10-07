@@ -189,3 +189,7 @@
 .modern-footer .footer-bottom{display:flex;justify-content:space-between;gap:20px;text-align:left}
 @media(max-width:900px){.hero-modern-inner,.impact-inner,.about-modern-grid{grid-template-columns:1fr}.hero-modern{padding:72px 0}.hero-visual{height:330px;order:-1}.hero-modern .hero-content{text-align:center;margin:auto}.hero-modern p{margin-left:auto;margin-right:auto}.hero-buttons,.hero-trust{justify-content:center}.modern-services{grid-template-columns:1fr 1fr}.about-panel{min-height:340px}.impact-inner{gap:45px}}
 @media(max-width:700px){.header .brand-logo{flex-basis:120px;width:120px;height:52px}.header .brand-logo img{width:120px;max-width:120px}.nav .nav-cta{margin:6px 0 0;width:100%;text-align:center}.hero-modern{min-height:auto;padding:60px 0 70px}.hero-modern h1{font-size:2.35rem}.hero-modern .hero-content{text-align:left}.hero-modern .hero-buttons,.hero-modern .hero-trust{justify-content:flex-start}.hero-visual{height:300px}.server-stack{width:180px}.server-unit{height:60px}.cloud-shape{right:0}.pill-one{left:0}.pill-two{right:0}.pill-three{left:2%}.modern-services{grid-template-columns:1fr}.impact-inner{gap:36px}.highlights-grid{grid-template-columns:1fr 1fr}.mini-points{grid-template-columns:1fr}.modern-footer .footer-bottom{flex-direction:column;text-align:center}.section-header-left{margin-bottom:36px}}
+
+/* Título de soluções em uma única linha */
+.nowrap-title{white-space:nowrap}
+@media(max-width:900px){.nowrap-title{white-space:normal}}
