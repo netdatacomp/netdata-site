@@ -2,41 +2,56 @@ import PageMeta from '../components/PageMeta'
 import { Link } from 'react-router-dom'
 
 const services = [
-  ['Formatação e instalação','Formatação completa, instalação de Windows, drivers e programas essenciais.'],
-  ['Manutenção de hardware','Troca de peças, limpeza interna, upgrade de memória e SSD.'],
-  ['Rede e internet','Configuração de roteadores, Wi-Fi, cabo de rede e compartilhamento.'],
-  ['Segurança e backup','Antivírus, backup de dados e proteção contra ransomware.'],
-  ['Suporte remoto','Atendimento a distância para problemas de software e configuração.'],
-  ['Atendimento em domicílio','Técnico vai até você no horário combinado. Sem precisar levar o PC.']
+  ['01', 'Infraestrutura', 'Computadores, upgrades e manutenção para sua operação continuar funcionando.'],
+  ['02', 'Redes e conectividade', 'Wi-Fi, cabeamento, roteadores e compartilhamento para ambientes residenciais e empresariais.'],
+  ['03', 'Servidores', 'Configuração, manutenção e organização da infraestrutura de servidores.'],
+  ['04', 'Segurança', 'Proteção, antivírus e boas práticas para reduzir riscos e perdas.'],
+  ['05', 'Backup', 'Estratégias de backup para manter seus dados protegidos e recuperáveis.'],
+  ['06', 'Suporte técnico', 'Atendimento remoto e em domicílio para resolver problemas com agilidade.']
 ]
+const highlights = [['28+', 'anos de experiência'], ['1996', 'desde o início'], ['100%', 'atendimento próximo'], ['SC', 'Tubarão e região']]
 
 export default function Home() {
-  return <><PageMeta title="NetData Computadores | Assistência Técnica em Tubarão/SC" description="Assistência técnica de computadores em Tubarão/SC desde 1996. Atendimento em domicílio, suporte remoto e manutenção." />
-    <section className="hero hero-home">
-      <div className="hero-image" aria-hidden="true"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85" alt="" /></div>
-      <div className="hero-overlay" aria-hidden="true" />
-      <div className="container hero-inner"><div className="hero-content">
-        <span className="hero-badge"><span className="hero-badge-dot" /> Desde 1996 em Tubarão/SC</span>
-        <h1>Problemas com o computador?<br /><span>A gente resolve.</span></h1>
-        <p>Assistência técnica em domicílio, formatação, rede, suporte remoto e manutenção. Atendimento rápido e com garantia.</p>
-        <div className="hero-buttons"><Link to="/contato" className="btn btn-blue">Solicitar atendimento</Link><Link to="/servicos" className="btn btn-outline">Ver serviços</Link></div>
-      </div></div>
-    </section>
-    <section className="benefits"><div className="container"><div className="benefits-grid">
-      <div className="benefit-item"><div className="benefit-icon">⌂</div><p><strong>Atendimento em domicílio</strong>Técnicos vão até sua casa ou empresa</p></div>
-      <div className="benefit-item"><div className="benefit-icon">◷</div><p><strong>Horário flexível</strong>Você escolhe o melhor dia e horário</p></div>
-      <div className="benefit-item"><div className="benefit-icon">✓</div><p><strong>Serviço com garantia</strong>Qualidade, segurança e garantia em nossos serviços.</p></div>
-    </div></div></section>
-    <section className="section"><div className="container two-cols">
-      <div><span className="section-label">Como podemos ajudar</span><h2>A solução que você procura</h2><p>Atendemos problemas de todos os níveis: formatação, reparo de hardware, instalação de rede, troca de peças, backup e segurança.</p><p>Dúvida se cobrimos a sua necessidade? É só ligar ou mandar mensagem. Orçamento sem compromisso.</p><Link to="/contato" className="btn btn-blue">Falar conosco</Link></div>
-      <div><div className="image-card"><img src="https://images.unsplash.com/photo-1593642702749-b7d2a804fbcf?auto=format&fit=crop&w=1200&q=85" alt="Profissional realizando manutenção em computador" loading="lazy" /><div className="image-card-caption"><strong>Manutenção especializada</strong><span>Diagnóstico e cuidado técnico para seus equipamentos</span></div></div></div>
-    </div></section>
-    <section className="section section-alt"><div className="container two-cols">
-      <div><div className="image-card image-card-tall"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85" alt="Infraestrutura de servidores e tecnologia" loading="lazy" /><div className="image-card-caption"><strong>Infraestrutura e tecnologia</strong><span>Experiência para residências e pequenas empresas</span></div></div></div>
-      <div><span className="section-label">Sobre a NetData</span><h2>Quem somos</h2><p>No início, prestávamos manutenção para empresas de grande porte. A partir de 1996, tornamos nossos serviços acessíveis a todos.</p><p>Hoje atendemos de residências a pequenas empresas. O atendimento em domicílio é o nosso maior diferencial.</p><div className="stats-row"><div className="stat-item"><strong>+28</strong><span>anos de experiência</span></div><div className="stat-item"><strong>1996</strong><span>ano de fundação</span></div><div className="stat-item"><strong>100%</strong><span>atendimento em domicílio</span></div></div></div>
-    </div></section>
-    <section className="section section-services"><div className="container"><div className="section-header"><span className="section-label">Nossos serviços</span><h2>O que fazemos</h2><p>Soluções completas para computadores, notebooks e redes.</p></div><div className="services-grid">{services.map(([title,text])=><div className="service-card" key={title}><div className="service-icon">✓</div><h3>{title}</h3><p>{text}</p></div>)}</div></div></section>
-    <section className="visual-strip"><div className="visual-strip-image"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=85" alt="Computador e tecnologia" loading="lazy" /></div><div className="visual-strip-content"><span className="section-label">Tecnologia no dia a dia</span><h2>Seu equipamento merece atenção profissional.</h2><p>Da manutenção preventiva à configuração de redes, cuidamos da tecnologia para você seguir trabalhando.</p><Link to="/contato" className="btn btn-blue">Conhecer a NetData</Link></div></section>
-    <section className="cta-banner"><div className="container"><h2>Precisa de ajuda agora?</h2><p>Fale conosco pelo WhatsApp ou telefone. Orçamento sem compromisso.</p><div className="cta-buttons"><Link to="/contato" className="btn btn-blue">Entrar em contato</Link><a href="tel:+554836222726" className="btn btn-outline">(48) 3622-2726</a></div></div></section>
-  </>
+  return (
+    <>
+      <PageMeta title="NetData Computadores | Tecnologia, suporte e infraestrutura em Tubarão/SC" description="Soluções de tecnologia, manutenção, redes, segurança, backup e suporte técnico para residências e empresas em Tubarão/SC." />
+      <section className="hero hero-modern">
+        <div className="hero-grid" aria-hidden="true">
+          <span className="node n1"></span><span className="node n2"></span><span className="node n3"></span><span className="node n4"></span><span className="node n5"></span><span className="node n6"></span>
+          <span className="line l1"></span><span className="line l2"></span><span className="line l3"></span><span className="line l4"></span><span className="line l5"></span>
+        </div>
+        <div className="container hero-modern-inner">
+          <div className="hero-content">
+            <span className="hero-badge"><span className="hero-badge-dot" /> Tecnologia e suporte desde 1996</span>
+            <h1>Tecnologia que conecta.<br /><span>Segurança que protege.</span></h1>
+            <p>Infraestrutura, manutenção, redes e suporte técnico para sua empresa e sua casa operarem melhor.</p>
+            <div className="hero-buttons"><Link to="/servicos" className="btn btn-blue">Conheça nossas soluções <span>→</span></Link><Link to="/contato" className="btn btn-outline">Fale conosco</Link></div>
+            <div className="hero-trust"><span>✓ Atendimento especializado</span><span>✓ Orçamento sem compromisso</span></div>
+          </div>
+          <div className="hero-visual" aria-label="Ilustração de infraestrutura tecnológica">
+            <div className="visual-glow"></div><div className="server-stack"><div className="server-unit"><i></i><i></i><b>NET</b></div><div className="server-unit"><i></i><i></i><b>DATA</b></div><div className="server-unit"><i></i><i></i><b>CORE</b></div></div>
+            <div className="cloud-shape">☁</div><div className="data-pill pill-one">REDE <strong>●</strong></div><div className="data-pill pill-two">BACKUP <strong>✓</strong></div><div className="data-pill pill-three">ONLINE <strong>●</strong></div>
+          </div>
+        </div>
+      </section>
+      <section className="benefits modern-benefits"><div className="container benefits-grid">
+        <div className="benefit-item"><div className="benefit-icon">01</div><p><strong>Experiência</strong>Mais de duas décadas cuidando de tecnologia.</p></div>
+        <div className="benefit-item"><div className="benefit-icon">02</div><p><strong>Proximidade</strong>Atendimento em Tubarão e região.</p></div>
+        <div className="benefit-item"><div className="benefit-icon">03</div><p><strong>Confiança</strong>Soluções práticas, claras e com suporte.</p></div>
+      </div></section>
+      <section className="section solutions-section"><div className="container">
+        <div className="section-header section-header-left"><span className="section-label">Nossas soluções</span><h2>Tecnologia pensada para o seu dia a dia.</h2><p>Do computador à infraestrutura de rede, reunimos as soluções essenciais para manter sua tecnologia funcionando.</p></div>
+        <div className="services-grid modern-services">{services.map(([number,title,text]) => <article className="service-card modern-card" key={title}><div className="card-top"><span className="service-number">{number}</span><span className="card-arrow">↗</span></div><h3>{title}</h3><p>{text}</p><Link to="/servicos">Saiba mais <span>→</span></Link></article>)}</div>
+      </div></section>
+      <section className="impact-section"><div className="container impact-inner">
+        <div className="impact-copy"><span className="section-label section-label-dark">Por que NetData?</span><h2>Sua infraestrutura de TI não pode parar.</h2><p>Conte com uma equipe próxima para cuidar dos equipamentos, redes e necessidades tecnológicas que fazem parte da sua rotina.</p><Link to="/contato" className="btn btn-blue">Fale com nossa equipe</Link></div>
+        <div className="highlights-grid">{highlights.map(([value,label]) => <div className="highlight" key={label}><strong>{value}</strong><span>{label}</span></div>)}</div>
+      </div></section>
+      <section className="section about-modern"><div className="container about-modern-grid">
+        <div className="about-panel"><span className="section-label">Desde 1996</span><div className="about-orbit"><div className="orbit-core">ND</div><span>TECNOLOGIA</span><span>SUPORTE</span><span>CONFIANÇA</span></div></div>
+        <div><span className="section-label">Sobre a NetData</span><h2>Experiência de verdade, tecnologia para hoje.</h2><p>Começamos atendendo empresas de grande porte e, desde 1996, tornamos nossa experiência acessível também a residências e pequenas empresas.</p><p>Hoje, nosso foco é entregar atendimento próximo, diagnóstico claro e soluções que realmente resolvam o problema.</p><div className="mini-points"><span>✓ Diagnóstico técnico</span><span>✓ Atendimento em domicílio</span><span>✓ Suporte remoto</span><span>✓ Soluções para empresas</span></div></div>
+      </div></section>
+      <section className="cta-banner modern-cta"><div className="container"><span className="cta-kicker">NETDATA COMPUTADORES</span><h2>Precisa de uma TI mais eficiente?</h2><p>Vamos entender sua necessidade e encontrar uma solução.</p><div className="cta-buttons"><Link to="/contato" className="btn btn-blue">Fale com a NetData</Link><Link to="/servicos" className="btn btn-outline">Ver soluções</Link></div></div></section>
+    </>
+  )
 }
