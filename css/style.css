@@ -63,9 +63,9 @@
 .header .brand-logo img{
   display:block;
   flex:0 0 auto;
-  width:210px;
-  height:60px;
-  max-width:210px;
+  width:240px;
+  height:auto;
+  max-width:240px;
   max-height:60px;
   min-width:0;
   object-fit:contain;
@@ -102,7 +102,7 @@
   }
   .header .brand-logo img{
     width:175px;
-    height:52px;
+    height:auto;
     max-width:175px;
     max-height:52px;
   }
