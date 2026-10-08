@@ -92,11 +92,11 @@ export default function Contato() {
           <div className="contact-pro-card contact-pro-info">
             <div className="contact-pro-photo">
               <img
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=90"
-                alt="Infraestrutura profissional de tecnologia"
+                src="https://images.unsplash.com/photo-1753964724380-2c5ae02512a8?auto=format&fit=crop&w=1400&q=90"
+                alt="Técnico realizando manutenção em equipamento de informática"
                 loading="lazy"
               />
-              <span className="contact-pro-photo-label">Tecnologia, suporte e confiança.</span>
+              <span className="contact-pro-photo-label">Tecnologia, suporte técnico e confiança.</span>
             </div>
 
             <h2 className="contact-pro-title">Fale com a NetData</h2>
