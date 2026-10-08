@@ -92,7 +92,7 @@ export default function Contato() {
           <div className="contact-pro-card contact-pro-info">
             <div className="contact-pro-photo">
               <img
-                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=90"
+                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=90"
                 alt="Infraestrutura profissional de tecnologia"
                 loading="lazy"
               />
