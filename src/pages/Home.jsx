@@ -19,7 +19,7 @@ export default function Home() {
             <Link to="/servicos" className="home-reference-button"><span className="home-reference-arrow">→</span> Conheça nossos serviços</Link>
           </div>
           <div className="home-reference-photo">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663502688839/QN83dcNBGpnNoHywQaxAKY/hero-technician-fZwt4gKbbr8qtcxin4fffr.webp" alt="Técnico especializado realizando manutenção em notebook em uma bancada de assistência técnica" fetchPriority="high" />
+            <img src="https://c625951.ssl.cf3.rackcdn.com/category/computerreparatie/computerreparatie-foto.jpg" alt="Técnico realizando manutenção em notebook aberto em uma bancada profissional de assistência técnica" fetchPriority="high" />
           </div>
         </div>
       </section>
