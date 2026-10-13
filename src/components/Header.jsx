@@ -3,8 +3,10 @@ import logo from '../../images/logo.png'
 
 const links = [
   ['/', 'Início'],
-  ['/servicos', 'Soluções'],
-  ['/suporte', 'Suporte'],
+  ['/sobre', 'Sobre'],
+  ['/solucoes', 'Soluções'],
+  ['/servicos', 'Serviços'],
+  ['/clientes', 'Clientes'],
   ['/contato', 'Contato']
 ]
 
