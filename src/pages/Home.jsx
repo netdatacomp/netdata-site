@@ -15,30 +15,40 @@ export default function Home() {
   return (
     <>
       <PageMeta title="NetData Computadores | Tecnologia, suporte e infraestrutura em Tubarão/SC" description="Soluções de tecnologia, manutenção, redes, segurança, backup e suporte técnico para residências e empresas em Tubarão/SC." />
-      <section className="hero hero-modern">
-        <div className="hero-grid" aria-hidden="true">
-          <span className="node n1"></span><span className="node n2"></span><span className="node n3"></span><span className="node n4"></span><span className="node n5"></span><span className="node n6"></span>
-          <span className="line l1"></span><span className="line l2"></span><span className="line l3"></span><span className="line l4"></span><span className="line l5"></span>
-        </div>
-        <div className="container hero-modern-inner">
-          <div className="hero-content">
-            <span className="hero-badge"><span className="hero-badge-dot" /> Tecnologia e suporte desde 1996</span>
-            <h1 className="hero-title"><span className="hero-title-main">Tecnologia que conecta.</span><span className="hero-title-accent">Segurança que protege.</span></h1>
-            <p>Infraestrutura, manutenção, redes e suporte técnico para sua empresa e sua casa operarem melhor.</p>
-            <div className="hero-buttons"><Link to="/servicos" className="btn btn-blue">Conheça nossas soluções <span>→</span></Link><Link to="/contato" className="btn btn-outline">Fale conosco</Link></div>
-            <div className="hero-trust"><span>✓ Atendimento especializado</span><span>✓ Orçamento sem compromisso</span></div>
+      <section className="home-reference-hero">
+        <div className="home-reference-shapes" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div className="container home-reference-hero-inner">
+          <div className="home-reference-copy">
+            <span className="home-reference-kicker"><i></i> Soluções em TI para sua empresa</span>
+            <h1>Experiência de verdade, <span>tecnologia para hoje.</span></h1>
+            <p>Soluções completas em informática, com suporte especializado, para manter o seu negócio sempre conectado e produtivo.</p>
+            <Link to="/servicos" className="home-reference-button"><span className="home-reference-arrow">→</span> Conheça nossos serviços</Link>
           </div>
-          <div className="hero-visual" aria-label="Ilustração de infraestrutura tecnológica">
-            <div className="visual-glow"></div><div className="server-stack"><div className="server-unit"><i></i><i></i><b>NET</b></div><div className="server-unit"><i></i><i></i><b>DATA</b></div><div className="server-unit"><i></i><i></i><b>CORE</b></div></div>
-            <div className="cloud-shape">☁</div><div className="data-pill pill-one">REDE <strong>●</strong></div><div className="data-pill pill-two">BACKUP <strong>✓</strong></div><div className="data-pill pill-three">ONLINE <strong>●</strong></div>
+          <div className="home-reference-photo">
+            <img src={`${import.meta.env.BASE_URL}images/netdata-assistencia-tecnica.webp?v=3`} alt="Técnico realizando manutenção em notebook em uma bancada de assistência técnica" fetchPriority="high" />
           </div>
         </div>
       </section>
-      <section className="benefits modern-benefits"><div className="container benefits-grid">
-        <div className="benefit-item"><div className="benefit-icon">01</div><p><strong>Experiência</strong>Mais de duas décadas cuidando de tecnologia.</p></div>
-        <div className="benefit-item"><div className="benefit-icon">02</div><p><strong>Proximidade</strong>Atendimento em Tubarão e região.</p></div>
-        <div className="benefit-item"><div className="benefit-icon">03</div><p><strong>Confiança</strong>Soluções práticas, claras e com suporte.</p></div>
-      </div></section>
+      <section className="home-reference-benefits" aria-label="Diferenciais da NetData">
+        <div className="container home-reference-benefits-grid">
+          <div className="home-reference-benefit">
+            <span className="home-reference-icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 45a25 25 0 0 1 48 0"/><path d="M13 36l-5-1M20 22l-4-4M32 17v-6M44 22l4-4M52 36l5-1"/><path d="M32 39l13-14"/><circle cx="32" cy="39" r="4" fill="currentColor"/></svg></span>
+            <div><strong>Performance</strong><p>Tecnologia preparada para acompanhar o ritmo da sua empresa.</p></div>
+          </div>
+          <div className="home-reference-benefit">
+            <span className="home-reference-icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round"><path d="M32 6 53 14v16c0 14-9 23-21 28C20 53 11 44 11 30V14L32 6Z"/><rect x="23" y="28" width="18" height="15" rx="3"/><path d="M27 28v-5a5 5 0 0 1 10 0v5"/><circle cx="32" cy="35" r="1.5" fill="currentColor"/></svg></span>
+            <div><strong>Segurança</strong><p>Proteção para seus dados, sistemas e infraestrutura.</p></div>
+          </div>
+          <div className="home-reference-benefit">
+            <span className="home-reference-icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 43h29a12 12 0 0 0 1-24 17 17 0 0 0-32-2A13 13 0 0 0 18 43Z"/><path d="M32 43v8M18 43v8M46 43v8"/><circle cx="18" cy="55" r="4"/><circle cx="32" cy="55" r="4"/><circle cx="46" cy="55" r="4"/></svg></span>
+            <div><strong>Conectividade</strong><p>Redes estáveis para manter tudo funcionando.</p></div>
+          </div>
+          <div className="home-reference-benefit">
+            <span className="home-reference-icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 35v-6a20 20 0 0 1 40 0v6"/><rect x="8" y="32" width="10" height="17" rx="5"/><rect x="46" y="32" width="10" height="17" rx="5"/><path d="M51 49c-2 7-8 10-17 10h-3"/><rect x="26" y="55" width="8" height="6" rx="2"/></svg></span>
+            <div><strong>Suporte especializado</strong><p>Atendimento rápido e soluções objetivas.</p></div>
+          </div>
+        </div>
+      </section>
       <section className="section solutions-section"><div className="container">
         <div className="section-header section-header-left"><span className="section-label">Nossas soluções</span><h2 className="nowrap-title">Tecnologia pensada para o seu dia a dia.</h2><p>Do computador à infraestrutura de rede, reunimos as soluções essenciais para manter sua tecnologia funcionando.</p></div>
         <div className="services-grid modern-services">{services.map(([number,title,text]) => {const imageMap={'Infraestrutura':['https://images.unsplash.com/photo-1648565726114-cfb73eb46340?auto=format&fit=crop&fm=jpg&q=85&w=1200','Infraestrutura de servidores e tecnologia'],'Redes e conectividade':['https://images.unsplash.com/photo-1750711731797-25c3f2551ff8?auto=format&fit=crop&fm=jpg&q=85&w=1200','Switch de rede com cabos Ethernet'],'Servidores':['https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?auto=format&fit=crop&w=1200&q=85','Rack de servidores em data center'],'Segurança':['https://images.unsplash.com/photo-1614064642639-e398cf05badb?auto=format&fit=crop&w=1200&q=85','Notebook com proteção e segurança digital'],'Backup':['https://images.unsplash.com/photo-1779896412280-cff477924a69?auto=format&fit=crop&w=1200&q=85','SSD externo para armazenamento e backup'],'Suporte técnico':['https://utidainformatica.net/assets/atendimento-diagnostico-g-ZvmgzA.webp','Técnico de informática realizando diagnóstico e suporte']};const [src,alt]=imageMap[title];return <article className="service-card modern-card" key={title}><div className="card-top"><div className="home-service-image"><img src={src} alt={alt} loading="lazy"/></div><span className="card-arrow">↗</span></div><h3>{title}</h3><p>{text}</p><Link to="/servicos">Saiba mais <span>→</span></Link></article>})}</div>
