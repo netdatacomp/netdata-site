@@ -19,7 +19,7 @@ export default function Home() {
             <Link to="/servicos" className="home-reference-button"><span className="home-reference-arrow">→</span> Conheça nossos serviços</Link>
           </div>
           <div className="home-reference-photo">
-            <img src={`${import.meta.env.BASE_URL}images/netdata-assistencia-tecnica.webp?v=4`} alt="Técnico especializado realizando manutenção em notebook em uma bancada de assistência técnica" fetchPriority="high" />
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3ddf5f0c?auto=format&fit=crop&w=1600&q=85" alt="Técnico especializado realizando manutenção em notebook em uma bancada de assistência técnica" fetchPriority="high" />
           </div>
         </div>
       </section>
