@@ -34,8 +34,7 @@ jobs:
       - name: Prepare public assets
         run: |
           mkdir -p public/images
-          cp images/logo.png public/images/logo.png
-          cp images/logo-visible.svg public/images/logo-visible.svg
+          cp -a images/. public/images/
 
       - name: Build
         run: npm run build
