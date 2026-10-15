@@ -11,7 +11,7 @@ const solutions = [
 export default function Solucoes() {
   return <>
     <PageMeta title="Soluções em TI | NetData Computadores" description="Conheça as soluções de infraestrutura, redes, segurança, backup e suporte técnico da NetData." />
-    <section className="hero page-hero page-hero-modern" style={{padding:'84px 0 68px',background:'#f7f9fc',color:'#102033'}}>
+    <section className="hero page-hero page-hero-modern" style={{padding:'32px 0 42px',background:'#f7f9fc',color:'#102033'}}>
       <div className="container hero-content" style={{color:"#102033"}}><span className="hero-badge"><span className="hero-badge-dot" /> Tecnologia para sua empresa</span><h1>Soluções em TI</h1><p>Tecnologia pensada para acompanhar as necessidades do seu negócio.</p></div>
     </section>
     <section className="section"><div className="container"><div className="section-header"><span className="section-label">O que podemos fazer</span><h2>Uma estrutura de TI mais confiável</h2><p>Soluções para apoiar a rotina, a segurança e a produtividade da sua operação.</p></div><div className="services-grid">{solutions.map(([title,description])=><article className="service-card" key={title}><h3>{title}</h3><p>{description}</p></article>)}</div><div style={{textAlign:'center',marginTop:38}}><Link to="/servicos" className="btn btn-blue">Ver serviços</Link></div></div></section>
