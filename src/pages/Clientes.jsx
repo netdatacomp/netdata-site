@@ -10,7 +10,7 @@ const areas = [
 export default function Clientes() {
   return <>
     <PageMeta title="Clientes | NetData Computadores" description="A NetData atende empresas, comércios, profissionais e usuários que precisam de suporte e soluções em informática." />
-    <section className="hero page-hero page-hero-modern" style={{padding:'84px 0 68px',background:'#f7f9fc',color:'#102033'}}>
+    <section className="hero page-hero page-hero-modern" style={{padding:'32px 0 42px',background:'#f7f9fc',color:'#102033'}}>
       <div className="container hero-content" style={{color:"#102033"}}><span className="hero-badge"><span className="hero-badge-dot" /> Parceria e confiança</span><h1>Clientes</h1><p>Relacionamentos construídos com atendimento próximo e soluções adequadas a cada necessidade.</p></div>
     </section>
     <section className="section"><div className="container"><div className="section-header"><span className="section-label">Como ajudamos</span><h2>Tecnologia para diferentes rotinas</h2><p>Entendemos o contexto de cada cliente para orientar o atendimento mais adequado.</p></div><div className="services-grid">{areas.map(([title,description])=><article className="service-card" key={title}><h3>{title}</h3><p>{description}</p></article>)}</div><div style={{textAlign:'center',marginTop:38}}><Link to="/contato" className="btn btn-blue">Converse com nossa equipe</Link></div></div></section>
