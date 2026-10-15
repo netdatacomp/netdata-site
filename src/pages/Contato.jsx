@@ -32,12 +32,12 @@ export default function Contato() {
       />
 
       <style>{`
-        .contact-pro-hero{position:relative;min-height:360px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(120deg,#071b34,#123d68)}
-        .contact-pro-content{position:relative;z-index:2;max-width:720px;padding:90px 0 85px;color:#fff}
-        .contact-pro-kicker{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.08);font-size:.82rem;font-weight:700;letter-spacing:.04em}
-        .contact-pro-kicker i{width:8px;height:8px;border-radius:50%;background:#28d17c;box-shadow:0 0 0 5px rgba(40,209,124,.12)}
+        .contact-pro-hero{position:relative;min-height:300px;display:flex;align-items:center;overflow:hidden;background:#f7f9fc}
+        .contact-pro-content{position:relative;z-index:2;max-width:720px;padding:70px 0;color:#102033}
+        .contact-pro-kicker{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid #dbe4ef;border-radius:999px;background:#fff;font-size:.82rem;font-weight:700;letter-spacing:.04em}
+        .contact-pro-kicker i{width:8px;height:8px;border-radius:50%;background:#28a86b;box-shadow:0 0 0 5px rgba(40,168,107,.12)}
         .contact-pro-content h1{margin:20px 0 12px;font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.02;letter-spacing:-.04em}
-        .contact-pro-content p{max-width:610px;margin:0;color:rgba(255,255,255,.78);font-size:1.12rem;line-height:1.7}
+        .contact-pro-content p{max-width:610px;margin:0;color:#526174;font-size:1.12rem;line-height:1.7}
         .contact-pro-wrap{padding:76px 0;background:#f7f9fc}
         .contact-pro-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:28px;align-items:stretch}
         .contact-pro-card{background:#fff;border:1px solid #e7ebf1;border-radius:22px;box-shadow:0 18px 50px rgba(15,35,60,.08)}
