@@ -32,8 +32,8 @@ export default function Contato() {
       />
 
       <style>{`
-        .contact-pro-hero{position:relative;min-height:300px;display:flex;align-items:center;overflow:hidden;background:#f7f9fc}
-        .contact-pro-content{position:relative;z-index:2;max-width:720px;padding:70px 0;color:#102033}
+        .contact-pro-hero{position:relative;min-height:0;display:flex;align-items:center;overflow:hidden;background:#f7f9fc}
+        .contact-pro-content{position:relative;z-index:2;max-width:720px;padding:32px 0 42px;color:#102033}
         .contact-pro-kicker{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid #dbe4ef;border-radius:999px;background:#fff;font-size:.82rem;font-weight:700;letter-spacing:.04em}
         .contact-pro-kicker i{width:8px;height:8px;border-radius:50%;background:#28a86b;box-shadow:0 0 0 5px rgba(40,168,107,.12)}
         .contact-pro-content h1{margin:20px 0 12px;font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.02;letter-spacing:-.04em}
@@ -69,8 +69,8 @@ export default function Contato() {
         .contact-pro-field input:focus,.contact-pro-field select:focus,.contact-pro-field textarea:focus{border-color:#4c91e8;background:#fff;box-shadow:0 0 0 4px rgba(76,145,232,.11)}
         .contact-pro-submit{width:100%;margin-top:20px!important;display:flex!important;align-items:center;justify-content:center;gap:10px}
         .contact-pro-note{margin:12px 0 0;text-align:center;color:#8792a1;font-size:.78rem;line-height:1.5}
-        @media(max-width:900px){.contact-pro-grid{grid-template-columns:1fr}.contact-pro-hero{min-height:430px}}
-        @media(max-width:600px){.contact-pro-content{padding:70px 0}.contact-pro-wrap{padding:48px 0}.contact-pro-info,.contact-pro-form{padding:22px}.contact-pro-form-grid{grid-template-columns:1fr}.contact-pro-field.full{grid-column:auto}.contact-pro-photo{height:210px}}
+        @media(max-width:900px){.contact-pro-grid{grid-template-columns:1fr}.contact-pro-hero{min-height:0}}
+        @media(max-width:600px){.contact-pro-content{padding:32px 0 42px}.contact-pro-wrap{padding:48px 0}.contact-pro-info,.contact-pro-form{padding:22px}.contact-pro-form-grid{grid-template-columns:1fr}.contact-pro-field.full{grid-column:auto}.contact-pro-photo{height:210px}}
       `}</style>
 
       <section className="contact-pro-hero">
