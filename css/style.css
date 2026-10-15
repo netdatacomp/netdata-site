@@ -532,3 +532,12 @@
   .header .nav a{padding:8px 8px;font-size:.8rem}
   .header .nav .nav-cta{margin-left:3px;padding:9px 10px;gap:5px}
 }
+
+
+/* Correção de empilhamento: imagens do banner Sobre ficavam atrás do fundo da seção */
+.page-hero-modern{position:relative;isolation:isolate;background:#10233e}
+.page-hero-modern .hero-image{z-index:0}
+.page-hero-modern .hero-overlay{z-index:1}
+.page-hero-modern .hero-content{z-index:2}
+.page-hero-modern .hero-image img{display:block;opacity:1;visibility:visible}
+.image-card img{display:block;opacity:1;visibility:visible}
