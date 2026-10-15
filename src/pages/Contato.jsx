@@ -33,10 +33,10 @@ export default function Contato() {
 
       <style>{`
         .contact-pro-hero{position:relative;min-height:0;display:flex;align-items:center;overflow:hidden;background:#f7f9fc}
-        .contact-pro-content{position:relative;z-index:2;max-width:720px;padding:32px 0 42px;color:#102033}
+        .contact-pro-content{position:relative;z-index:2;max-width:720px;padding:12px 0 18px;color:#102033}
         .contact-pro-kicker{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid #dbe4ef;border-radius:999px;background:#fff;font-size:.82rem;font-weight:700;letter-spacing:.04em}
         .contact-pro-kicker i{width:8px;height:8px;border-radius:50%;background:#28a86b;box-shadow:0 0 0 5px rgba(40,168,107,.12)}
-        .contact-pro-content h1{margin:20px 0 12px;font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.02;letter-spacing:-.04em}
+        .contact-pro-content h1{margin:0;font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.02;letter-spacing:-.04em}
         .contact-pro-content p{max-width:610px;margin:0;color:#526174;font-size:1.12rem;line-height:1.7}
         .contact-pro-wrap{padding:76px 0;background:#f7f9fc}
         .contact-pro-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:28px;align-items:stretch}
@@ -70,14 +70,12 @@ export default function Contato() {
         .contact-pro-submit{width:100%;margin-top:20px!important;display:flex!important;align-items:center;justify-content:center;gap:10px}
         .contact-pro-note{margin:12px 0 0;text-align:center;color:#8792a1;font-size:.78rem;line-height:1.5}
         @media(max-width:900px){.contact-pro-grid{grid-template-columns:1fr}.contact-pro-hero{min-height:0}}
-        @media(max-width:600px){.contact-pro-content{padding:32px 0 42px}.contact-pro-wrap{padding:48px 0}.contact-pro-info,.contact-pro-form{padding:22px}.contact-pro-form-grid{grid-template-columns:1fr}.contact-pro-field.full{grid-column:auto}.contact-pro-photo{height:210px}}
+        @media(max-width:600px){.contact-pro-content{padding:12px 0 18px}.contact-pro-wrap{padding:48px 0}.contact-pro-info,.contact-pro-form{padding:22px}.contact-pro-form-grid{grid-template-columns:1fr}.contact-pro-field.full{grid-column:auto}.contact-pro-photo{height:210px}}
       `}</style>
 
       <section className="contact-pro-hero">
         <div className="container contact-pro-content">
-          <span className="contact-pro-kicker"><i /> Atendimento profissional e próximo</span>
           <h1>Vamos conversar?</h1>
-          <p>Conte o que você precisa. Nossa equipe está pronta para orientar, tirar dúvidas e encontrar a melhor solução para sua empresa ou seu equipamento.</p>
         </div>
       </section>
 
