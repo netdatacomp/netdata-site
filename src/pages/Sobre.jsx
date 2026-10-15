@@ -1,7 +1,7 @@
 import PageMeta from '../components/PageMeta'
 import { Link } from 'react-router-dom'
 
-const assistenciaImage = '/netdata-site/images/netdata-assistencia-tecnica.svg?v=5'
+const assistenciaImage = '/netdata-site/images/netdata-assistencia-tecnica.webp?v=1'
 
 export default function Sobre() {
   return <>
