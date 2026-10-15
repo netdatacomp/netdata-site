@@ -32,9 +32,7 @@ export default function Contato() {
       />
 
       <style>{`
-        .contact-pro-hero{position:relative;min-height:470px;display:flex;align-items:center;overflow:hidden;background:#07111f}
-        .contact-pro-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
-        .contact-pro-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,24,.94) 0%,rgba(4,12,24,.78) 48%,rgba(4,12,24,.38) 100%)}
+        .contact-pro-hero{position:relative;min-height:360px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(120deg,#071b34,#123d68)}
         .contact-pro-content{position:relative;z-index:2;max-width:720px;padding:90px 0 85px;color:#fff}
         .contact-pro-kicker{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.08);font-size:.82rem;font-weight:700;letter-spacing:.04em}
         .contact-pro-kicker i{width:8px;height:8px;border-radius:50%;background:#28d17c;box-shadow:0 0 0 5px rgba(40,209,124,.12)}
@@ -76,10 +74,6 @@ export default function Contato() {
       `}</style>
 
       <section className="contact-pro-hero">
-        <img
-          src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=90"
-          alt="Equipe profissional em reunião"
-        />
         <div className="container contact-pro-content">
           <span className="contact-pro-kicker"><i /> Atendimento profissional e próximo</span>
           <h1>Vamos conversar?</h1>
