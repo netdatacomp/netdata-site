@@ -1,7 +1,7 @@
 import PageMeta from '../components/PageMeta'
 import { Link } from 'react-router-dom'
 
-const assistenciaImage = `${import.meta.env.BASE_URL}images/netdata-assistencia-tecnica.webp?v=4`
+const assistenciaImage = '/netdata-site/images/netdata-assistencia-tecnica.svg?v=5'
 
 export default function Sobre() {
   return <>
@@ -10,6 +10,6 @@ export default function Sobre() {
       <div className="hero-image"><img src={assistenciaImage} alt="Técnico realizando manutenção em notebook em uma bancada de assistência técnica" /></div><div className="hero-overlay" />
       <div className="container hero-content"><span className="hero-badge"><span className="hero-badge-dot" /> NetData Computadores</span><h1>Sobre a NetData</h1><p>Experiência de verdade, tecnologia para hoje.</p></div>
     </section>
-    <section className="section"><div className="container two-cols"><div><span className="section-label">Quem somos</span><h2>Tecnologia próxima, soluções com propósito</h2><p>A NetData Computadores oferece suporte técnico, assistência, serviços de informática e soluções de conectividade para ajudar empresas e pessoas a manter sua tecnologia funcionando.</p><p>Nosso foco é entender cada necessidade, explicar as opções com clareza e recomendar soluções adequadas ao dia a dia de cada cliente.</p><Link to="/contato" className="btn btn-blue">Fale com a NetData</Link></div><div className="image-card"><img src={assistenciaImage} alt="Profissional realizando assistência técnica de informática" loading="lazy" /></div></div></section>
+    <section className="section"><div className="container two-cols"><div><span className="section-label">Quem somos</span><h2>Tecnologia próxima, soluções com propósito</h2><p>A NetData Computadores oferece suporte técnico, assistência, serviços de informática e soluções de conectividade para ajudar empresas e pessoas a manter sua tecnologia funcionando.</p><p>Nosso foco é entender cada necessidade, explicar as opções com clareza e recomendar soluções adequadas ao dia a dia de cada cliente.</p><Link to="/contato" className="btn btn-blue">Fale com a NetData</Link></div><div className="image-card"><img src={assistenciaImage} alt="Profissional realizando assistência técnica de informática" loading="eager" /></div></div></section>
   </>
 }
