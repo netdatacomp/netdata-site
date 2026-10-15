@@ -75,7 +75,7 @@ export default function Contato() {
 
       <section className="contact-pro-hero">
         <div className="container contact-pro-content">
-          <h1>Vamos conversar?</h1>
+          <p>Conte o que você precisa. Nossa equipe está pronta para orientar, tirar dúvidas e encontrar a melhor solução para sua empresa ou seu equipamento.</p>
         </div>
       </section>
 
