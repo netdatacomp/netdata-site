@@ -6,7 +6,7 @@ const solutions = [
   ['Segurança e proteção', 'Boas práticas e soluções para ajudar a proteger sistemas, equipamentos e informações.'],
   ['Suporte técnico', 'Orientação e atendimento para resolver problemas e reduzir interrupções.'],
   ['Backup e continuidade', 'Organização de cópias de segurança para reduzir o risco de perda de dados.'],
-  ['Cloud e colaboração', 'Apoio no uso de ferramentas em nuvem para facilitar o acesso, o compartilhamento e o trabalho em equipe.'],
+  ['Hardware e periféricos', 'Orientação na escolha e configuração de computadores, monitores, impressoras e outros periféricos para atender às necessidades de cada ambiente.'],
   ['Desempenho e otimização', 'Avaliação de equipamentos e recursos de TI para identificar melhorias em desempenho, estabilidade e produtividade.']
 ]
 
