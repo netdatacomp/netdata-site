@@ -77,7 +77,7 @@ export default function Contato() {
         <div className="container contact-pro-content section-header">
           <span className="section-label">Entre em contato</span>
           <h2 className="single-line-heading">Estamos prontos para ajudar você</h2>
-          <p>Conte o que você precisa. Nossa equipe está pronta para orientar, tirar dúvidas e encontrar a melhor solução para sua empresa ou seu equipamento.</p>
+          <p style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto' }}>Conte o que você precisa. Nossa equipe está pronta para orientar, tirar dúvidas e encontrar a melhor solução para sua empresa ou seu equipamento.</p>
         </div>
       </section>
 
