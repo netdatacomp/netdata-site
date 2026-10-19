@@ -584,3 +584,7 @@
 @media(max-width:900px){.about-intro-section .two-cols{gap:34px}.about-carousel{height:360px}}
 @media(max-width:700px){.about-intro-section .two-cols{gap:28px}.about-carousel{height:340px;border-radius:20px}.about-carousel-caption{left:22px;right:22px;bottom:54px}.about-carousel-caption h3{font-size:1.45rem}.about-carousel-caption p{font-size:.84rem}.about-carousel-dots{left:22px;bottom:20px}.about-carousel-arrow{width:36px;height:36px}}
 @media(prefers-reduced-motion:reduce){.about-carousel-slide,.about-carousel-slide img,.about-carousel-arrow,.about-carousel-dot{transition:none}.about-carousel-slide.is-active img{transform:none}}
+
+
+/* Carrossel Sobre: navegação automática sem setas sobre o texto */
+.about-carousel-arrow{display:none!important}
