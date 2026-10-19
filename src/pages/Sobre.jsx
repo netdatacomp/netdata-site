@@ -80,8 +80,6 @@ export default function Sobre() {
               </div>
             </div>
           ))}
-          <button className="about-carousel-arrow about-carousel-prev" type="button" aria-label="Imagem anterior" onClick={() => goToSlide(activeSlide - 1)}>‹</button>
-          <button className="about-carousel-arrow about-carousel-next" type="button" aria-label="Próxima imagem" onClick={() => goToSlide(activeSlide + 1)}>›</button>
           <div className="about-carousel-dots" aria-label="Selecionar imagem">
             {slides.map((slide, index) => (
               <button key={slide.image} type="button" className={`about-carousel-dot${index === activeSlide ? ' is-active' : ''}`} aria-label={`Mostrar imagem ${index + 1}: ${slide.eyebrow}`} aria-current={index === activeSlide ? 'true' : undefined} onClick={() => goToSlide(index)} />
