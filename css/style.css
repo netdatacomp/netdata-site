@@ -541,3 +541,7 @@
 .page-hero-modern .hero-content{z-index:2}
 .page-hero-modern .hero-image img{display:block;opacity:1;visibility:visible}
 .image-card img{display:block;opacity:1;visibility:visible}
+
+/* Reduz o espaço entre o cabeçalho e a frase introdutória nas abas Sobre, Soluções, Serviços e Clientes */
+.page-hero-modern[style*="minHeight:0"]{min-height:0;padding:24px 0 20px!important}
+@media(max-width:700px){.page-hero-modern[style*="minHeight:0"]{min-height:0;padding:18px 0 16px!important}}
