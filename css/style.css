@@ -111,6 +111,13 @@
 }
 
 
+
+
+/* Títulos das páginas internas: manter em uma linha em telas maiores */
+.section-header:has(.single-line-heading){max-width:100%}
+.section-header .single-line-heading{white-space:nowrap;font-size:clamp(1.15rem,2.25vw,2rem)}
+@media(max-width:700px){.section-header .single-line-heading{white-space:normal;font-size:clamp(1.35rem,5vw,1.8rem)}}
+
 /* V3 — identidade visual moderna NetData */
 .header .brand-logo{flex:0 0 150px;width:150px;height:58px}
 .header .brand-logo img{width:150px;max-width:150px;max-height:58px}
