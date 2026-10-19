@@ -5,7 +5,9 @@ const solutions = [
   ['Infraestrutura e redes', 'Planejamento e configuração de redes para manter dispositivos e equipes conectados.'],
   ['Segurança e proteção', 'Boas práticas e soluções para ajudar a proteger sistemas, equipamentos e informações.'],
   ['Suporte técnico', 'Orientação e atendimento para resolver problemas e reduzir interrupções.'],
-  ['Backup e continuidade', 'Organização de cópias de segurança para reduzir o risco de perda de dados.']
+  ['Backup e continuidade', 'Organização de cópias de segurança para reduzir o risco de perda de dados.'],
+  ['Cloud e colaboração', 'Apoio no uso de ferramentas em nuvem para facilitar o acesso, o compartilhamento e o trabalho em equipe.'],
+  ['Desempenho e otimização', 'Avaliação de equipamentos e recursos de TI para identificar melhorias em desempenho, estabilidade e produtividade.']
 ]
 
 export default function Solucoes() {
